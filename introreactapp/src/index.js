@@ -1,6 +1,22 @@
-import React from "react";
-import ReactDOM from "react-dom";
+const person = {
+    name:'Raouf',
+    talk(){
+        console.log(this);
+    },
+    walk(){}
+}
 
-const element = <h1>Hello Wrold</h1>;
-ReactDOM.render(element, document.getElementById('root'));
+person.walk();
 
+const square = function (number){
+    return number * number;
+}
+
+const square = (number) => number * number;
+
+const jobs = [
+    {id: 1, IsActive: false},
+    {id: 2, IsActive: true},
+]
+
+var activeJobs = jobs.filter(job => job.IsActive);
