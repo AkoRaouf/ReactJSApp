@@ -1,3 +1,7 @@
-const colors = ["red", "green", "blue"];
-const items = colors.map(color => `<li>${color}</li>`);
-console.log(items);
+const address = {
+    street: '',
+    city: '',
+    country: ''
+}
+
+const {city: ci, country : ct, street: st} = address;
