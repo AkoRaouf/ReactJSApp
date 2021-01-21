@@ -1,22 +1,5 @@
-const person = {
-    name:'Raouf',
-    talk(){
-        console.log(this);
-    },
-    walk(){}
-}
+const colors = ["red", "green", "blue"];
 
-person.walk();
+const items = colors.map(color => '<li>' + color + '</li>');
 
-const square = function (number){
-    return number * number;
-}
-
-const square = (number) => number * number;
-
-const jobs = [
-    {id: 1, IsActive: false},
-    {id: 2, IsActive: true},
-]
-
-var activeJobs = jobs.filter(job => job.IsActive);
+const items = colors.map(color => `<li>${color}</li>`);
